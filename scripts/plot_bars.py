@@ -29,6 +29,7 @@ COLORS = {
     "polars-eager": "#00B4D8",
     "duckdb": "#80B9C8",
     "pyspark": "#C29470",
+    "datafusion_py_sql": "#F3971F",
     "dask": "#77D487",
     "pandas": "#2B8C5D",
     "modin": "#50B05F",
@@ -42,6 +43,7 @@ SOLUTION_NAME_MAP = {
     "dask": "Dask",
     "modin": "Modin",
     "pyspark": "PySpark",
+    "datafusion_py_sql": "DataFusion (Python, SQL)"
 }
 
 Y_LIMIT_MAP = {

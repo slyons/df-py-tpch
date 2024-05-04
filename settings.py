@@ -38,6 +38,8 @@ class Run(BaseSettings):
     spark_executor_memory: str = "1g"  # Tune as needed for optimal performance
     spark_log_level: str = "ERROR"
 
+    datafusion_mode: str = "sql" # or "df" for dataframe mode
+
     @computed_field  # type: ignore[misc]
     @property
     def include_io(self) -> bool:

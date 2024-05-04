@@ -63,8 +63,12 @@ run-dask: .venv  ## Run Dask benchmarks
 run-modin: .venv  ## Run Modin benchmarks
 	$(VENV_BIN)/python -m queries.modin
 
+.PHONY: run-datafusion_py
+run-datafusion_py: .venv
+	$(VENV_BIN)/python -m queries.datafusion_py
+
 .PHONY: run-all
-run-all: run-polars run-duckdb run-pandas run-pyspark run-dask run-modin  ## Run all benchmarks
+run-all: run-polars run-duckdb run-pandas run-pyspark run-dask run-modin run-datafusion_py  ## Run all benchmarks
 
 .PHONY: plot
 plot: .venv  ## Plot results
